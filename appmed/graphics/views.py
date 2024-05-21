@@ -16,3 +16,10 @@ def interactive_graphic(request):
     graph_html = opy.plot(fig, auto_open=False, output_type='div')
 
     return render(request, 'graphics/interactive_graphic.html', {'graph_html': graph_html})
+
+
+def temperature_chart(request):
+    days = ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье']
+    temperatures = [36.6, 36.7, 36.8, 36.5, 37.0, 37.2, 37.1]
+
+    return render(request, 'graphics/temperature_chart.html', {'days': days, 'temperatures': temperatures})

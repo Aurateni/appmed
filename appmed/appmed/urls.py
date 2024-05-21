@@ -23,4 +23,5 @@ urlpatterns = [
     path('graphics/', include('graphics.urls')),
     path('graphics/interactive_graph/', include('graphics.urls')),
     path('charts/', include('charts.urls')),
+    path('graphics/temperature_chart/', include('graphics.urls'))
 ]
