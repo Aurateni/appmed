@@ -22,4 +22,5 @@ urlpatterns = [
     path('patients/', include('patients.urls')),
     path('graphics/', include('graphics.urls')),
     path('graphics/interactive_graph/', include('graphics.urls')),
+    path('charts/', include('charts.urls')),
 ]
